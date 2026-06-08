@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and local tooling
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+.cache/
+
+# Notebook runtime artifacts
+.ipynb_checkpoints/
+
+# Generated/legacy narrative documents (README is the canonical project description)
+dataset_description*.md
+info/*.md
+reports/yield_model_report/*.md
+
+# Local logs
+*.log
+logs.log
+
+# External API caches and training logs
+catboost_info/
+
+# Raw/private datasets and generated modeling tables
+productivity_data_v2.csv
+productivity_dataset_v2.zip
+enriched_yield_dataset.csv
+enriched_yield_dataset.parquet
+enriched_no_cropwise.csv
+!data/enriched_yield_dataset.csv
+test.csv
+test.py
+res.csv
+
+# Generated model artifacts
+catboost_yield_model.cbm
+catboost_feature_importance.csv
+catboost_valid_predictions.csv
+pycaret_results/
+reports/yield_model_report/tables/
+
+# Archives and exported office documents
+*.zip
+*.docx
+
+# Local project/session metadata
+.omo/
+.opencode/
+.claude/
+opencode/
+claudecode/
+AGENTS.md
+CLAUDE.md
+OPENCODE.md
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

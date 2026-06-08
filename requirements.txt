@@ -1,0 +1,9 @@
+pandas
+numpy
+scikit-learn
+catboost
+requests
+urllib3
+matplotlib
+pyarrow
+pycaret
