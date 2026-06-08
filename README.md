@@ -2,6 +2,10 @@
 
 Field-level yield forecasting project for spring wheat. The repository contains a publishable enriched dataset, feature engineering code, CatBoost training pipeline, benchmark script, notebooks, and diagnostic figures.
 
+![Actual vs predicted spring wheat yield](reports/yield_model_report/figures/model_prediction_scatter.png)
+
+*Validation scatter plot for the tuned CatBoost model. Points closer to the diagonal indicate more accurate field-level yield predictions.*
+
 ## Overview
 
 The task is to predict `productivity`, a field-level yield value measured in centners per hectare. The final modeling scope is spring wheat seasons from 2020 to 2025.
@@ -58,6 +62,8 @@ The final model is a tuned CatBoost regressor.
 The tuned CatBoost model also outperformed the best default PyCaret benchmark on the same feature schema: RMSE 8.735 vs. 10.40.
 
 Most influential features include local NDVI statistics, field coordinates, soil-moisture variability, local temperature aggregates, and previous crop context.
+
+![Top CatBoost feature importance](reports/yield_model_report/figures/model_feature_importance_top20.png)
 
 ## Repository structure
 
